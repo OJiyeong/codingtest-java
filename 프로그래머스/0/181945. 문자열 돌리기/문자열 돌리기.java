@@ -8,5 +8,10 @@ public class Solution {
         for(int i = 0; i < a.length(); i++) {
             System.out.println(a.charAt(i));
         }
+        
+        /*
+        for (char ch : a.toCharArray())
+            System.out.println(ch);
+        */
     }
 }
