@@ -5,5 +5,7 @@ class Solution {
             answer += arr[i];
         }
         return answer;
+        
+        //return String.join("", arr);
     }
 }
