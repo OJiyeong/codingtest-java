@@ -1,13 +1,12 @@
 class Solution {
     public int solution(String A, String B) {
-        int answer = 0;
         int count = -1;
         StringBuilder sb1 = new StringBuilder(A);
         StringBuilder sb2 = new StringBuilder(A);
         int index = sb2.length();
         
         if(A.equals(B)) {
-            answer = 0;
+            count = 0;
         } else {
             for(int i = 0; i < index; i++) {
                 sb1.setCharAt(0, sb2.charAt(index-1));
@@ -25,9 +24,8 @@ class Solution {
                 }
             }
             
-            answer = count;
         
         }
-        return answer;
+        return count;
     }
 }
