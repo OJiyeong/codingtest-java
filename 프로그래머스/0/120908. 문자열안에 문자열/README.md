@@ -83,3 +83,10 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+<br>
+
+---
+
+<br>
+<h3>.contains</h3>
+<p>문자열 안에 특정 문자열이 포함되어 있는지를 boolean 값으로 반환한다</p>
