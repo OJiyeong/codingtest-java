@@ -78,3 +78,33 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+<br>
+
+---
+
+<br>
+
+<h3>아스키코드 - 문자-숫자 변환<br></h3>
+<img width="431" height="893" alt="image" src="https://github.com/user-attachments/assets/939facb8-6382-43d6-8b00-3f82a5c72cd3" />
+<br>
+
+<ul>
+<li>숫자 0은 48, 숫자 9는 57</li>
+<li>A는 65, Z는 90</li>
+<li>a는 97, z는 122</li>
+</ul>
+
+<br>
+
+<p>
+<b>char c = my_string.charAt(i);<br>
+int n = c - '0';</b>
+
+c는 문자값이기 때문에 정수 값(0, 2, ...)이 아니라 아스키코드 값(48, 50, ...)이다.<br>
+그래서 문자 '0'의 아스키코드 값을 빼서 나온 값이 실제 정수 값이 된다.
+
+<b>int n = c - '0';</b><br>
+이 과정이 가능한 이유는 자바의 문자(char)와 정수(int)간의 암묵적인 타입 변환을 지원하기 때문이다.<br>
+정수형에 문자를 넣으면 내부적으로는 해당 문자의 아스키코드값이 저장된다. 반대로 문자형에 정수를 넣으면 자동으로 해당 숫자의 아스키코드값이 저장돼 출력을 하게 되면 char형으로 출력이 된다  
+</p>
