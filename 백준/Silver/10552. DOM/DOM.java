@@ -39,6 +39,7 @@ public class Main {
 
         dfs(p);
 
+//        System.out.println(cnt == -1 ? -1 : cnt-1);
         System.out.println(cnt);
 
 
@@ -46,7 +47,23 @@ public class Main {
 
     static void dfs(int ch) {
 
-    	if (visited[ch])  {
+        // 첫 채널도 +1됨
+//        if (visited[ch]) {
+//            cnt = -1;
+//            return;
+//        }
+//
+//        visited[ch] = true;
+//        cnt++;
+//
+//        if (disToLike[ch] == -1) { // 현재 채널(ch)을 싫어해서 바꾸려는 사람이 없음
+//            return;
+//        }
+//
+//        dfs(disToLike[ch]);
+
+
+        if (visited[ch])  {
             cnt = -1;
         } else if (disToLike[ch] != -1) {
             visited[ch] = true;
